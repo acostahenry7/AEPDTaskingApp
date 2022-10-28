@@ -4,8 +4,12 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const routes = require("../routes");
 
+let required = () => {
+  throw new Error(`Configure la variable de entorno PORT`);
+};
+
 module.exports = (app) => {
-  app.set("port", process.env.PORT || 3000);
+  app.set("port", process.env.PORT || required());
 
   //Views
   app.set("views", path.join(__dirname, "../views"));

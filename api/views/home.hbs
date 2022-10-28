@@ -22,14 +22,30 @@
   <div>
     <input class="form-control" type="text" class="" placeholder="Buscar..." />
   </div>
+  <div class="PriorityItems">
+    <div class="d-flex" style="align-items:center">
+      <div style="width: 10px; height: 10px; background-color: #f44336 "></div>
+      <p >Alta</p>
+    </div>
+    <div class="d-flex" style="align-items:center">
+      <div style="width: 10px; height: 10px; background-color: #ddbe18"></div>
+      <p >Media</p>
+    </div>
+    <div class="d-flex" style="align-items:center">
+      <div style="width: 10px; height: 10px; background-color: #8bc34a"></div>
+      <p >Baja</p>
+    </div>
+  </div>
   <div class="TodoList">
     {{#each todos}}
       <div
-        style="display: flex; flex-direction: row; background-color: {{color}}"
+        style="display: flex; flex-direction: row; background-color: whitesmoke"
         class="border shadow-sm TodoItem my-2"
       >
-        <div style="width: 70%">
-          <h5 class="">{{title}} - {{status}}</h5>
+        <div style="width: 70%;">
+          <div style=" display: flex">
+            <h5 class="" style="width: 160px">{{title}} - {{status}} </h5><i class="fa-solid fa-circle" style="font-size: 9px; color:{{color}} "></i>
+          </div>
           <p class="description">{{description}}</p>
         </div>
         <div style="width: 30% ; display: flex">
@@ -48,14 +64,15 @@
         <div></div>
     {{/each}} --}}
   </div>
-  <div>
+  <div style="display:flex; justify-content: flex-end">
     <button
       type="button"
-      class="btn btn-primary"
+      class="btn bg-primary shadow"
       data-bs-toggle="modal"
       data-bs-target="#exampleModal"
+      style="position: fixed; bottom: 40px; border-radius: 50%; width: 60px; height: 60px;"
     >
-      Agregar Tarea
+      <i class="fa-solid fa-plus text-white"></i>
     </button>
   </div>
 </div>
