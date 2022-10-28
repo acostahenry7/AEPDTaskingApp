@@ -1,0 +1,57 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Crear una Tarea</h5>
+
+      </div>
+      <div class="modal-body">
+        <div class="">
+          <form>
+            <div class="form-group">
+              <label>Título</label>
+              <input id="taskName" type="text" class="form-control" />
+            </div>
+            <div class="form-group mt-3">
+              <label>Decripción</label>
+              <textarea
+                id="taskDesc"
+                class="form-control"
+                placeholder="Breve descripcion de la finalidad de la tarea"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label>Prioridad</label>
+              <select id="taskPriority" class="form-control">
+                <option value="1">Alta</option>
+                <option value="2">Media</option>
+                <option value="3">Baja</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >Cancelar</button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="addTask"
+        >Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+.app_wrapper {
+  padding-top: 10vh;
+  text-align: center;
+  padding: 5vh 30px 0 30px;
+}
+
+.main_title {
+  font-size: 22px;
+}
+
+/*-------------Squares Wrapper----------*/
+
+.squares_wrapper {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.squares {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.squares li {
+  width: 80px;
+  height: 50px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.squares li.gray {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.squares li.green {
+  background-color: #2196f3;
+}
+
+.squares li.red {
+  background-color: #ff9800;
+}
+
+/*--------------TodoList----------------*/
+
+.TodoList {
+  margin-top: 35px;
+  height: 378px;
+  overflow-y: scroll;
+}
+
+/*-------------Todo Item---------------*/
+
+.TodoItem {
+  padding: 10px 15px;
+  text-align: left;
+  border-radius: 10px;
+  color: white;
+}
+
+.TodoItem h5 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.TodoItem p.description {
+  font-size: 12px;
+  height: 45px;
+  margin: 0;
+}
+
+.TodoItem p.date {
+  font-size: 11px;
+  text-align: end;
+  margin-right: 30px;
+}

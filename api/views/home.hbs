@@ -1,0 +1,61 @@
+<div class="app_wrapper">
+  <div>
+    <h3 class="main_title">Resumen de Taeras Pendientes</h3>
+  </div>
+  <div class="squares_wrapper">
+    <ul class="squares">
+      <div style="display: flex; flex-direction: column">
+        <li class="green">{{completed}}</li>
+        <p style="font-size: 13px">Completadas</p>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <li class="gray">{{total}}</li>
+        <p style="font-size: 13px">Totales</p>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <li class="red">{{pending}}</li>
+        <p style="font-size: 13px">Pendientes</p>
+      </div>
+
+    </ul>
+  </div>
+  <div>
+    <input class="form-control" type="text" class="" placeholder="Buscar..." />
+  </div>
+  <div class="TodoList">
+    {{#each todos}}
+      <div
+        style="display: flex; flex-direction: row; background-color: {{color}}"
+        class="border shadow-sm TodoItem my-2"
+      >
+        <div style="width: 70%">
+          <h5 class="">{{title}} - {{status}}</h5>
+          <p class="description">{{description}}</p>
+        </div>
+        <div style="width: 30% ; display: flex">
+          <div style="width: 75% ;justify-content: flex-end">
+            <p class="date">{{dateTime}}</p>
+          </div>
+
+          <div style="width: 2%; justify-content: flex-end; "><i
+              class="fa-solid fa-bars ml-1"
+            ></i></div>
+
+        </div>
+      </div>
+    {{/each}}
+    {{!-- {{#each item}}
+        <div></div>
+    {{/each}} --}}
+  </div>
+  <div>
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Agregar Tarea
+    </button>
+  </div>
+</div>
