@@ -1,0 +1,15 @@
+{
+  "name": "aepdtaskingapp",
+  "version": "1.0.0",
+  "description": "Task Managment Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon api/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
